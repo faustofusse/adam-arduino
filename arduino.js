@@ -1,5 +1,5 @@
 var five = require("johnny-five");
-var board = new five.Board();
+var board = new five.Board({port:'COM3'});
 
 board.on("ready", function () {
     console.log('BRUH THE BOARD IS READY');
